@@ -1,0 +1,800 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+:root{
+    --sec-color:#D10024;
+}
+::selection{
+    background-color: var(--sec-color);
+    color: white;
+}
+::-webkit-scrollbar{
+    background-color: #333;
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--sec-color);
+}
+/* start contact  */
+.contact{
+    background-color: #1E1F29;
+}
+.contact .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.contact .content svg{
+    padding-top: 2px;
+}
+.contact .left,
+.contact .right{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 4px;
+    margin-bottom: -12px;
+}
+.contact .content a{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--sec-color);
+    transition: 0.3s;
+} 
+.contact .content a p:hover{
+    color: var(--sec-color);
+}
+.contact .content p{
+    font-size: 12px;
+    color: white;
+}
+.contact .content .right .cont{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    color: var(--sec-color);
+    cursor: pointer;
+}
+
+.contact .content .right .cont:hover p{
+    color: var(--sec-color);
+}
+
+/* end contact  */
+/* start navbar */
+.nav-bar{
+    background-color: #15161D;
+}
+.nav-bar .container .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav-bar .container .content .half{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.nav-bar .container .content .half select{
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+    padding: 8px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.nav-bar .container .content .half input{
+    height: 40px;
+    margin-left: -1px;
+    padding-left: 12px;
+    font-size: 12px;
+    width: 300px;
+}
+.nav-bar .container .content .half button{
+    height: 40px;
+    width: 100px;
+    background-color: var(--sec-color);
+    color: white;
+    border: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.3s;
+}
+.nav-bar .container .content .half button:hover{
+    background-color: white;
+    color: var(--sec-color);
+    border: 1px solid white;
+}
+.nav-bar .container .content .right button{
+    background-color: transparent;
+    border: none;
+}
+.nav-bar .container .content .right button:hover {
+    color: var(--sec-color);
+}
+.nav-bar .container .content .right button .cont{
+    font-size: 12px;
+    padding-top: 15px;
+}
+.start-100{
+    left: 67% !important;
+    top: 14px !important;
+}
+.nav-bar .container .content .right button .cont p{
+    padding-top: 2px;
+}
+/* end navbar */
+/* start sections */
+.nav-bar .container .content .right .offcan{
+    display: none;
+}
+.offcanvas{
+    background-color: #15161D;
+}
+.offcanvas .top a
+.sections{
+    border-top: 3px solid var(--sec-color);
+}
+.sections .content .top,
+.offcanvas .top {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #f6f6f6;
+}
+.offcanvas .top {
+    border-bottom: none;
+}
+.sections .content .top .cont,
+.offcanvas .top .cont{
+    position: relative;
+    overflow: hidden;
+}
+.sections .content .top a,
+.offcanvas .top a{
+    text-decoration: none;
+    padding-top: 5px;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 14px;
+}
+.offcanvas-header h5{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+}
+.offcanvas-body{
+    margin-left: auto;
+    margin-right: auto;
+}
+.sections .content .top a::before{
+    content: '';
+    bottom: 0px;
+    left: -84px;
+    height: 2px;
+    width: 0%;
+    background-color: var(--sec-color);
+    transition: 0.3s;
+}
+
+.sections .content .top a:hover::before{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+}
+.sections .content .top a:hover{
+    color: var(--sec-color);
+}
+
+.sections .content .bottom{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sections .content .bottom .row{
+    justify-content: center;
+}
+.sections .content .bottom .cont{
+    width: 360px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.sections .content .bottom .cont img{
+    transition: 0.5s;
+    width: 100%;
+    z-index: -2;
+}
+.sections .content .bottom .cont:hover img{
+    transform: scale(1.2);
+}
+.sections .content .bottom .cont::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -54px;
+    width: 83%;
+    background-color: var(--sec-color);
+    z-index: 1;
+    height: 100%;
+    opacity: 0.9;
+    transform: skewX(314deg);
+}
+.sections .content .bottom .cont::after{
+    content: '';
+    position: absolute;
+    top: -123px;
+    left: -142px;
+    width: 60%;
+    background-color: var(--sec-color);
+    z-index: 1;
+    height: 100%;
+    opacity: 0.9;
+    transform: skewX(314deg);
+}
+.sections .content .bottom .cont .text{
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+}
+.sections .content .bottom .cont .text h3{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+.sections .content .bottom .cont .text a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.sections .content .bottom .cont:hover a{
+    padding-left: 10px;
+}
+/* end sections */
+/* start products */
+.products{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 705px;
+}
+.products .content .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.products .content .top .btn{
+    background-color: transparent;
+    border: none;
+}
+.products .content .top .btn img{
+    width: 30px;
+}
+.products .content .top .left h1{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products .content .top .left h1:hover{
+    color: #D10024;
+}
+.products .content .top .right{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.products .content .top .right h3{
+    font-size: 15px;
+    color: var(--sec-color);
+    cursor: pointer;
+    user-select: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+}
+.products .content .top .right h3:hover{
+    color: #333;
+}
+.products .content .bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+.products .content .bottom .cont{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #d2d2d2;
+    display: none;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    height: fit-content;
+}
+.products .content .bottom .cont:hover{
+    border: 1px solid var(--sec-color);
+}
+.products .content .bottom .one{
+    display: inline-block;
+}
+.products .content .bottom .cont img{
+    width: 250px;
+}
+.products .content .bottom .cont .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.products .content .bottom .cont .bottom p{
+    font-size: 15px;
+}
+.products .content .bottom .cont .bottom h3{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.products .content .bottom .cont:hover h3{
+    color: var(--sec-color);
+}
+.products .content .bottom .cont .bottom .price{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+}
+.products .content .bottom .cont .bottom .price h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--sec-color);
+}
+.products .content .bottom .cont .bottom .price del{
+    font-size: 15px;
+}
+.products .content .bottom .cont .bottom .rating{
+    position: relative;
+}
+.products .content .bottom .cont .bottom .rating svg{
+    width: 15px;
+    color: var(--sec-color);
+    z-index: 1;
+}
+.products .content .bottom .cont .bottom .rating::before{
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    width: 32%;
+    height: 1px;
+    background-color: #dddcdc;
+    z-index: -1;
+}
+.products .content .bottom .cont .bottom .rating::after{
+    content: '';
+    position: absolute;
+    top: 13px;
+    right: 0px;
+    width: 32%;
+    height: 1px;
+    background-color: #dddcdc;
+    z-index: -1;
+}
+.products .content .bottom .cont .bottom .options{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.products .content .bottom .cont .bottom .options svg:hover{
+    color: var(--sec-color);
+    cursor: pointer;
+}
+.products .content .bottom .cont .buy{
+    display: none;
+}
+.products .content .bottom .cont .buy button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: var(--sec-color);
+    color: white;
+}
+.products .content .bottom .cont .buy svg{
+    margin-bottom: 2px;
+    margin-right: 4px;
+}
+.products .content .bottom .cont .buy button:hover{
+    border: 1px solid var(--sec-color);
+    color: var(--sec-color);
+    background-color: transparent;
+}
+
+.products .content .buttons{
+    display: flex;
+    justify-content:end;
+    gap: 5px;
+}
+.products .content .buttons button{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.products .content .buttons img{
+    width: 20px;
+}
+.products .content .buttons .left{
+    transform: rotate(180deg);
+}
+
+/* end products */
+/* start deal  */
+.deal{
+    background: url(../images/hotdeal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-attachment: fixed;
+}
+.deal .content{
+    background-color: #0000009e;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.deal .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+}
+.deal .top .cont{
+    background-color: var(--sec-color);
+    color: white;
+    width: 80px;
+    padding-top: 14px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    line-height: 0.1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.deal .top .cont:hover{
+    background-color: white;
+    border: 1px solid var(--sec-color);
+    color: var(--sec-color);
+}
+.deal .content  .half{
+    color: white;
+}
+.deal .content  .half h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.deal .content .half h3{
+    font-size: 22px;
+    font-weight: 300;
+}
+.deal .content .bottom button{
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    background-color: var(--sec-color);
+    color: white;
+}
+.deal .content .bottom button:hover{
+    border: 1px solid var(--sec-color);
+    background-color: transparent;
+}
+/* end deal  */
+/* start sell */
+.sell{
+    height: fit-content;
+}
+.sell .content{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sell .content .left .top,
+.sell .content .half .top,
+.sell .content .right .top,
+.sell .content .four .top{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 25px;
+
+}
+.sell .content .left .top h1,
+.sell .content .half .top h1,
+.sell .content .right .top h1,
+.sell .content .four .top h1{
+    font-size: 22px;
+    font-weight: 700;
+}
+.sell img{
+    width: 75px;
+}
+.sell .content .left .top button,
+.sell .content .half .top button,
+.sell .content .right .top button,
+.sell .content .four .top button{
+    background-color: transparent;
+    border: 1px solid var(--sec-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 0.8;
+    text-align: center;
+    padding: 1px;
+    color: var(--sec-color);
+}
+.sell .content .top button:hover{
+    background-color: var(--sec-color);
+    color: white;
+    border: 1px solid var(--sec-color);
+}
+.sell .content .left .bottom,
+.sell .content .half .bottom,
+.sell .content .right .bottom,
+.sell .content .four .bottom{
+    overflow: hidden;
+}
+.sell .content .left .bottom .cont,
+.sell .content .half .bottom .cont,
+.sell .content .right .bottom .cont,
+.sell .content .four .bottom .cont{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.sell .content .left .bottom .first,
+.sell .content .half .bottom .first,
+.sell .content .right .bottom .first,
+.sell .content .four .bottom .first{
+    position: relative;
+}
+.sell .content .left .bottom .second,
+.sell .content .half .bottom .second,
+.sell .content .right .bottom .second,
+.sell .content .four .bottom .second{
+    display: none;
+    position: relative;
+}
+.sell .content .left .bottom .cont .right p,
+.sell .content .half .bottom .cont .right p,
+.sell .content .right .bottom .cont .right p,
+.sell .content .four .bottom .cont .right p{
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 2px;
+}
+.sell .content .left .bottom .cont .right h3,
+.sell .content .half .bottom .cont .right h3,
+.sell .content .right .bottom .cont .right h3,
+.sell .content .four .bottom .cont .right h3{
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.sell .content .bottom .cont .right:hover h3{
+    color: var(--sec-color);
+    cursor: pointer;
+}
+.sell .content .left .bottom .cont .right .price,
+.sell .content .half .bottom .cont .right .price,
+.sell .content .right .bottom .cont .right .price,
+.sell .content .four .bottom .cont .right .price{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.sell .content .left .bottom .cont .right .price h3,
+.sell .content .half .bottom .cont .right .price h3,
+.sell .content .right .bottom .cont .right .price h3,
+.sell .content .four .bottom .cont .right .price h3{
+    font-size: 17px;
+    color: var(--sec-color);
+}
+.sell .content .left .bottom .cont .right .price del,
+.sell .content .half .bottom .cont .right .price del,
+.sell .content .right .bottom .cont .right .price del,
+.sell .content .four .bottom .cont .right .price del{
+    font-size: 12px;
+}
+/* end sell */
+/* start sign */
+.sign{
+    border-top: 3px solid #f6f6f6;
+    border-bottom: 3px solid var(--sec-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.sign .top h1{
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+.sign .half{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.sign .half .search{
+    width: 400px;
+    margin-right: -10px;
+    height: 40px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 1px solid var(--sec-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    caret-color: var(--sec-color);
+}
+.sign .half button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: var(--sec-color);
+    color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.3s;
+}
+.sign .half button:hover{
+    background-color: white;
+    color: var(--sec-color);
+    border: 1px solid var(--sec-color);
+}
+.sign .half button svg{
+    margin-bottom: 2px;
+}
+.sign .bottom{
+    padding-top: 15px;
+}
+.sign .bottom img{
+    width: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    filter: grayscale(2);
+    transition: 0.3s;
+}
+.sign .bottom img:hover{
+    filter: grayscale(0);
+}
+/* end sign */
+/* start footer */
+.footer{
+    background-color: #15161D;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+}
+.footer .content h3{
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.footer .content .one p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.footer .content ul{
+    list-style: none;
+}
+.footer .content a{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: 300;
+}
+.footer .content a:hover{
+    color: var(--sec-color);
+}
+.footer .content .two a,
+.footer .content .three a,
+.footer .content .four a{
+    padding-bottom: 15px;
+}
+/* end footer */
+/* start pay */
+.pay{
+    background-color: #1E1F29;
+    color: #777;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pay .content .top{
+    padding-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.pay .content img{
+    width: 50px;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+.pay .content img:hover{
+    filter: grayscale(0);
+}
+.pay .content .bottom h4{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+/* end pay */
+/* start up */
+.up button{
+    position: fixed;
+    right: 5px;
+    bottom: 15px;
+    background-color: transparent;
+    border: none;
+    display: none;
+    transition: 0.5s;
+}
+.up img{
+    width: 40px;
+}
+.up button:hover{
+    transform: scale(1.1);
+}
+/* end up */
+/* start loading */
+.loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    background-color: #1E1F29;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 300px;
+}
+.loading img{
+    width: 70px;
+}
+/* end loading */

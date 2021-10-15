@@ -1,0 +1,70 @@
+@media(max-width:990px){
+    .nav-bar .container .content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-bar .container .content .half{
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .products{
+        height: 850px;
+    }
+    .products .content .bottom{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }   
+    .products .content .top{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+    .products .content .bottom .cont img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products .content .top .right{
+        flex-direction: column;
+    }
+
+}
+
+
+@media(max-width:770px){
+    .contact .content{
+        display: none;
+    }
+    .nav-bar .container .content .half input{
+            width: 140px;
+    } 
+    .sections .content .top{
+        display: none;
+    }
+    .nav-bar .container .content .right .offcan{
+        display: inline-block;
+    }
+    .offcanvas-body .sections .top{
+        display: flex;
+        flex-direction: column;
+    }  
+    .offcanvas-top{
+        height: fit-content;
+    }
+    .sell .content .left,
+    .sell .content .half,
+    .sell .content .right,
+    .sell .content .four{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .sell .content .left .top, .sell .content .half .top, .sell .content .right .top, .sell .content .four .top{
+        justify-content: center;
+    }
+    .sign .half .search{
+        width: 300px;
+    }
+}
