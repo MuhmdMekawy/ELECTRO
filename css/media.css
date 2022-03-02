@@ -1,3 +1,8 @@
+@media(max-width:1200px){
+    .sections .content .bottom .cont{
+        width: 32%;
+    }
+}
 @media(max-width:990px){
     .nav-bar .container .content{
         flex-direction: column;
@@ -7,11 +12,8 @@
         justify-content: center;
         padding-bottom: 20px;
     }
-    .products{
-        height: 850px;
-    }
     .products .content .bottom{
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 20px;
         text-align: center;
     }   
@@ -28,7 +30,9 @@
     .products .content .top .right{
         flex-direction: column;
     }
-
+    .sections .content .bottom .cont .text h3{
+        font-size: 15px;
+    }
 }
 
 
@@ -66,5 +70,37 @@
     }
     .sign .half .search{
         width: 300px;
+    }
+    .sections .content .bottom{
+        padding-top: 38px;
+        padding-bottom: 0px;
+    }
+    .sections .content .bottom .cont{
+        width: 85%;
+    }
+    .sections .content .bottom .cont .text h3{
+        font-size: 32px;
+    }
+}
+@media (max-width:500px){
+    .nav-bar .container .content .half button{
+        width: 70px;
+        font-size: 14px;
+    }
+    .sections .content .bottom .cont .text h3{
+        font-size: 16px;
+    }
+    .sign{
+        display: none;
+    }
+}
+@media (max-width:400px){
+    .deal .top{
+        flex-wrap: wrap;
+    }
+    .deal .top .cont{
+        width: 112px;
+        height: 95px;
+        padding-top: 25px;
     }
 }

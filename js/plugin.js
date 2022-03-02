@@ -23,7 +23,7 @@ $(document).ready(function(){
             "color" : "#D10024"
         });
         $(this).siblings().children().css({
-            "color" : "#333" ,
+            "color" : "#ced4da" ,
             "border-bottom" : "none"
         })
     });
@@ -58,25 +58,25 @@ $(document).ready(function(){
 
 
     $('#laptop').on('click' , function(){
-        $('.products .content .bottom .cont').hide(1000);
-        $('.laptop').show(1000);
+        $('.products .content .bottom .cont').hide(0);
+        $('.laptop').show(0);
     });
     $('#smart').on('click' , function(){
-        $('.products .content .bottom .cont').hide(1000);
-        $('.smart').show(1000);
+        $('.products .content .bottom .cont').hide(0);
+        $('.smart').show(0);
     });
     $('#headphone').on('click' , function(){
-        $('.products .content .bottom .cont').hide(1000);
-        $('.headphone').show(1000);
+        $('.products .content .bottom .cont').hide(0);
+        $('.headphone').show(0);
     });
     $('#access').on('click' , function(){
-        $('.products .content .bottom .cont').hide(1000);
-        $('.access').show(1000);
+        $('.products .content .bottom .cont').hide(0);
+        $('.access').show(0);
     });
 
     $('.products .content .top .left h1').click(function(){
-        $('.products .content .bottom .one').show( 1000 );
-        $('.products .content .bottom .one').siblings().hide(1000);
+        $('.products .content .bottom .one').show( 0 );
+        $('.products .content .bottom .one').siblings().hide(0);
     });
 
 
@@ -90,9 +90,9 @@ $(document).ready(function(){
             "border-bottom" : "none"
         })
         $('.products .content .bottom .cont').first().siblings().fadeOut();
-        $('.products .content .bottom .cont').first().delay(1000).hide(1000);
+        $('.products .content .bottom .cont').first().delay(0).hide(0);
         $('.products .content .bottom .cont').first().appendTo($('.products .content .bottom .cont').parent());
-        $('.products .content .bottom .cont').first().show(1000);
+        $('.products .content .bottom .cont').first().show(0);
     });
     $('.products .content .buttons .left').click(function(){
         $('.products .content .top .left h1').css({
@@ -110,9 +110,9 @@ $(document).ready(function(){
     });
 
     $('.products .content .bottom .cont').hover(function(){
-        $(this).find('.buy').show(500)
+        $(this).find('.buy').slideDown(500)
     } , function(){
-        $(this).find('.buy').hide(500)
+        $(this).find('.buy').slideUp(500)
     });
 
     $('.sell .content .left .top .more').click(function(){

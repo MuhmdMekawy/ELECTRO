@@ -3,7 +3,10 @@ body{
     overflow-x: hidden;
     position: relative;
 }
-
+a{
+    text-decoration: none;
+    color: unset;
+}
 :root{
     --sec-color:#D10024;
 }
@@ -72,6 +75,7 @@ body{
 /* start navbar */
 .nav-bar{
     background-color: #15161D;
+    overflow: hidden;
 }
 .nav-bar .container .content{
     display: flex;
@@ -171,6 +175,9 @@ body{
     transition: 0.3s;
     font-size: 14px;
 }
+.offcanvas .top a{
+    color: white;
+}
 .offcanvas-header h5{
     margin-left: auto;
     margin-right: auto;
@@ -214,11 +221,13 @@ body{
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    z-index: 1;
 }
 .sections .content .bottom .cont img{
     transition: 0.5s;
     width: 100%;
     z-index: -2;
+    position: relative;
 }
 .sections .content .bottom .cont:hover img{
     transform: scale(1.2);
@@ -227,18 +236,19 @@ body{
     content: '';
     position: absolute;
     top: 0;
-    left: -54px;
+    left: -84px;
     width: 83%;
     background-color: var(--sec-color);
     z-index: 1;
     height: 100%;
     opacity: 0.9;
     transform: skewX(314deg);
+    z-index: -1;
 }
 .sections .content .bottom .cont::after{
     content: '';
     position: absolute;
-    top: -123px;
+    top: -121px;
     left: -142px;
     width: 60%;
     background-color: var(--sec-color);
@@ -270,7 +280,6 @@ body{
 .products{
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 705px;
 }
 .products .content .top{
     display: flex;
