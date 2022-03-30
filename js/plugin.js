@@ -1,5 +1,8 @@
 window.onload = function(){
-    $('.loading').fadeOut(500).parent().css("overflow" , "hidden scroll")
+    $('.loading').fadeOut(500).parent().css({
+        "overflow-x" : "hidden" ,
+        "overflow-y" : "scroll"
+    })
 };
 
 $(document).ready(function(){
